@@ -1,0 +1,8 @@
+import csv
+
+with open('sesli_asistan_veri_seti.csv', newline='', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    next(reader)  # Header'ı atla
+    for row in reader:
+        # Her bir satırın sütunlarına erişebilirsiniz:
+        print(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9])
