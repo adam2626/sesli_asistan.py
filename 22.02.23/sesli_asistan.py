@@ -21,6 +21,10 @@ import pyttsx3
 import smtplib
 import pandas as pd
 import pickle
+with open('model.pkl', 'wb') as dosya:
+    pickle.dump(model, dosya)
+with open('model.pkl', 'rb') as dosya:
+    model = pickle.load(dosya)
 from veri_onisleme import preprocess_text, VeriOnIsleme
 from makine_ogrenimi import MakineOgrenimi
 from veri_onisleme import on_isleme, clean_text
