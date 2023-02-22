@@ -4,5 +4,5 @@ import pickle
 ...
 
 # Eğitilmiş modelin kaydedilmesi
-with open('model.pk1', 'wb') as dosya:
+with open('model.pkl', 'wb') as dosya:
     pickle.dump(model, dosya)
