@@ -1,0 +1,14 @@
+import pickle
+
+# model oluştur
+model = "Ben bir örnek modelim."
+
+# modeli dosyaya yaz
+with open('model.pkl', 'wb') as dosya:
+    pickle.dump(model, dosya)
+
+# modeli dosyadan oku
+with open('model.pkl', 'rb') as dosya:
+    model = pickle.load(dosya)
+
+print(model)

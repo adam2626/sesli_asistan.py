@@ -116,7 +116,7 @@ email_sifresi = 'sifre123'
 veri_seti = pd.read_csv('sesli_asistan_veri_seti.csv')
 
 # Makine öğrenimi modelini yükle
-with open('model.pk1', 'rb') as dosya:
+with open('model.pkl', 'rb') as dosya:
     model = pickle.load(dosya)
 
 # Sesli asistan motorunu ayarla
