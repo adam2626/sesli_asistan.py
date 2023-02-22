@@ -22,10 +22,35 @@ import smtplib
 import pandas as pd
 import pickle
 import pickle
+import speech_recognition as sr
+import webbrowser
+import os
+import random
+import time
+import playsound
+import gtts
+import pickle  # pickle modülünü ekleyin
 
-# Eğitilmiş modelin yüklenmesi
+# model dosyasını açın ve yükleyin
 with open('model.pkl', 'rb') as dosya:
     model = pickle.load(dosya)
+    # Eğitilmiş modelin yüklenmesi
+with open('model.pkl', 'rb') as dosya:
+    model = pickle.load(dosya)
+
+# Asistanın cevap vermesi için rastgele mesajlar oluşturun
+def response(text):
+    print(text)
+    playsound.playsound("message.mp3")
+    message = gtts.gTTS(text=text, lang="tr")
+    file = "response.mp3"
+    message.save(file)
+    playsound.playsound(file)
+    os.remove(file)
+
+# Kodun geri kalanını buraya ekleyin
+
+
 
 # Daha sonra kullanılacak fonksiyonların tanımlanması ve kullanımı
 ...
