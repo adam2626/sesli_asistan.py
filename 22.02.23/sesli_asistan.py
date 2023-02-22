@@ -21,7 +21,6 @@ import pyttsx3
 import smtplib
 import pandas as pd
 import pickle
-import pickle
 import speech_recognition as sr
 import webbrowser
 import os
@@ -29,14 +28,13 @@ import random
 import time
 import playsound
 import gtts
-import pickle  # pickle modülünü ekleyin
 
 # model dosyasını açın ve yükleyin
-with open('model.pkl', 'rb') as dosya:
-    model = pickle.load(dosya)
+with open('model.pkl', 'rb') as model.pkl:
+    model = pickle.load(model.pkl)
     # Eğitilmiş modelin yüklenmesi
-with open('model.pkl', 'rb') as dosya:
-    model = pickle.load(dosya)
+with open('model.pkl', 'rb') as model.pkl:
+    model = pickle.load(model.pkl)
 
 # Asistanın cevap vermesi için rastgele mesajlar oluşturun
 def response(text):
