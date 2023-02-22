@@ -32,10 +32,10 @@ import gtts
 import pickle  # pickle modülünü ekleyin
 
 # model dosyasını açın ve yükleyin
-with open('model.pkl', 'rb') as dosya:
+with open('model.pk1', 'rb') as dosya:
     model = pickle.load(dosya)
     # Eğitilmiş modelin yüklenmesi
-with open('model.pkl', 'rb') as dosya:
+with open('model.pk1', 'rb') as dosya:
     model = pickle.load(dosya)
 
 # Asistanın cevap vermesi için rastgele mesajlar oluşturun
