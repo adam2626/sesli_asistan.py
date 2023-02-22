@@ -30,11 +30,15 @@ import playsound
 import gtts
 
 # model dosyasını açın ve yükleyin
-with open('model.pkl', 'rb') as model.pkl:
+with open('model.pkl', 'rb', 'wb') as model = pickle.load(open('model.pkl', 'rb', 'wb'))
     model = pickle.load(model.pkl)
     # Eğitilmiş modelin yüklenmesi
-with open('model.pkl', 'rb') as model.pkl:
+with open('model.pkl', 'rb', 'wb') as model = pickle.load(open('model.pkl', 'rb', 'wb'))
     model = pickle.load(model.pkl)
+with open('model.pkl', 'rb', 'wb') as model = pickle.load(open('model.pkl', 'rb', 'wb'))
+    r = sr.Recognizer()
+    mikrofon = sr.Microphone()
+
 
 # Asistanın cevap vermesi için rastgele mesajlar oluşturun
 def response(text):
