@@ -25,7 +25,6 @@ from veri_onisleme import preprocess_text, VeriOnIsleme
 from makine_ogrenimi import MakineOgrenimi
 from veri_onisleme import on_isleme, clean_text
 import pandas as pd
-////
 
 veri_seti = pd.read_csv('sesli_asistan_veri_seti.csv', header=None)
 print(veri_seti)
