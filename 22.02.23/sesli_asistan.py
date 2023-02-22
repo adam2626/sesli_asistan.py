@@ -9,7 +9,7 @@ import json
 from time import strftime, localtime
 from gtts import gTTS
 from playsound import playsound
-import joblib
+import joblib   
 import speech_recognition as sr
 import random
 import webbrowser
@@ -21,10 +21,17 @@ import pyttsx3
 import smtplib
 import pandas as pd
 import pickle
-with open('model.pkl', 'wb') as dosya:
-    pickle.dump(model, dosya)
+import pickle
+
+# Eğitilmiş modelin yüklenmesi
 with open('model.pkl', 'rb') as dosya:
     model = pickle.load(dosya)
+
+# Daha sonra kullanılacak fonksiyonların tanımlanması ve kullanımı
+...
+
+    
+    
 from veri_onisleme import preprocess_text, VeriOnIsleme
 from makine_ogrenimi import MakineOgrenimi
 from veri_onisleme import on_isleme, clean_text
